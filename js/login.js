@@ -15,7 +15,7 @@ document.querySelector('form').addEventListener('submit', function (e) {
     } else if (role === "trainer") {
         window.location.href = "trainer_attendance.html";
     } else if (role === "admin") {
-        window.location.href = "admin.html";
+        window.location.href = "Admin.html";
     }
     else if (role === "Coordinator") {
         window.location.href = "Coordinator.html";
@@ -24,5 +24,6 @@ document.querySelector('form').addEventListener('submit', function (e) {
         alert("Invalid role selected!");
     }
 });
+
 
 
