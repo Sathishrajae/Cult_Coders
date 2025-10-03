@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #958888;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 100%;
+  margin: 40px auto;
+  background: #b1d51f;
+  padding: 30px;
+  border-radius: 8px;
+  border: 5px solid hsl(0, 8%, 9%);  
+  box-shadow: 0 0 12px rgba(10, 43, 195, 0.3);  
+}
+
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filters input, .filters select, .filters button {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px radius #8ed11b;
+  
+}
+
+.filters button {
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.filters button:hover {
+  background: #0056b3;
+}
+
+     table {
+      width: 100%;
+      border-collapse: collapse;
+      color:rgb(106, 13, 13)
+    }
+    table th, table td {
+      border: 1px solid #381a1a;
+      border-width: 3px;
+      padding: 10px;
+      text-align: center;
+      color: black;
+      font-family: Arial, sans-serif;
+      
+    }
+    table th {
+      background: #db1515;
+      color: white;
+      box-sizing: border-box;
+    }
+
+.paid {
+  color: green;
+  font-weight: bold;
+}
+.pending {
+  color: red;
+  font-weight: bold;
+}
+

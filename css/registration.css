@@ -1,0 +1,98 @@
+/* General Page Layout */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f7f3ef; /* light cream background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form Card */
+form#registrationForm {
+  background: #fff;
+  padding: 45px 40px;
+  border-radius: 12px;
+  width: 450px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  border-top: 6px solid #e67e22; /* highlight with orange */
+}
+
+h2 {
+  text-align: center;
+  color: #e67e22; /* orange title */
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #6c757d;
+  margin-bottom: 25px;
+  font-size: 0.95rem;
+}
+
+/* Form Groups */
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  width: 150px;
+  font-weight: 500;
+  color: #333;
+}
+
+.form-group input,
+.form-group select {
+  flex: 1;
+  padding: 11px 12px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  font-size: 1rem;
+  background: #fff;
+}
+
+/* Button */
+button#registerBtn {
+  width: 100%;
+  padding: 14px;
+  background: #e67e22; /* orange */
+  color: #fff;
+  border: none;
+  border-radius: 9px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+button#registerBtn:hover {
+  background: #ca6f1e; /* darker orange */
+}
+
+/* Login Link */
+.login-link {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.95rem;
+}
+
+.login-link a {
+  color: #e67e22;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Coordinator</title>
+  <link rel="stylesheet" href="css/managecoordinator.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>👩‍🏫 Manage Coordinator</h1>
+
+    <!-- Add/Edit Form -->
+    <form id="counsellorForm">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter email">
+
+      <label for="phone">Phone</label>
+      <input type="text" id="phone" name="phone" placeholder="Enter phone number">
+
+      <label for="specialization">Specialization</label>
+      <input type="text" id="specialization" name="specialization" placeholder="e.g. Python, Java">
+
+      <label for="active">Status</label>
+      <select id="active" name="active">
+        <option value="True">Active</option>
+        <option value="False">Inactive</option>
+      </select>
+
+      <button type="submit" class="save-btn">💾 Save Coordinator</button>
+    </form>
+
+    <hr>
+
+    <!-- List Table -->
+    <h2>📋 Coordinator List</h2>
+    <div class="table-wrapper">
+      <table id="counsellorTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Specialization</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script>
+
+  </script>
+</body>
+
+</html>

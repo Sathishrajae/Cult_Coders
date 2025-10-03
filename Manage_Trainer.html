@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Manage Trainers</title>
+  <link rel="stylesheet" href="css/managetrain11.css">
+  <link rel="stylesheet" href="css/managtarin.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <h1>🏋‍♂ Manage Trainers</h1>
+
+    <!-- Trainer Form (Add/Edit) -->
+    <form id="trainerForm">
+      <label for="name">Trainer Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter trainer's name" required>
+
+      <label for="expertise">Expertise</label>
+      <input type="text" id="expertise" name="expertise" placeholder="e.g. Python, Java, ML" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter email" required>
+
+      <label for="phone">Phone</label>
+      <input type="text" id="phone" name="phone" placeholder="Enter contact number">
+
+      <label for="status">Status</label>
+      <select id="status" name="status">
+        <option value="active">Active</option>
+        <option value="inactive">Inactive</option>
+      </select>
+
+      <button type="submit" class="save-btn">💾 Save Trainer</button>
+    </form>
+
+    <hr>
+
+    <!-- Trainer List Table -->
+    <h2>📋 Trainer List</h2>
+    <table id="trainerTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Expertise</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="js/managetrain.js"></script>
+</body>
+
+</html>

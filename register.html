@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phoenix Academy - Registration</title>
+  <link rel="stylesheet" href="css/registration.css">
+</head>
+
+<body>
+  <div class="container">
+    <form id="registrationForm" action="login.html" method="post">
+      <h2>Phoenix Academy</h2>
+      <p class="subtitle">Register as a student to start your journey!</p>
+
+      <div class="form-group">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="fullName" placeholder="Enter Your Name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required>
+      </div>
+
+      <div class="form-group">
+        <label for="gender">Gender</label>
+        <div class="radio-simple">
+          <input type="radio" id="male" name="gender" value="male" required>
+          <label for="male">Male</label>
+
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label>
+
+          <input type="radio" id="other" name="gender" value="other">
+          <label for="other">Other</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="education">Education</label>
+        <select id="education" name="education" required>
+          <option value="" disabled selected>Select Education Level</option>
+          <option value="High School">High School</option>
+          <option value="Bachelor">Bachelor</option>
+          <option value="Master">Master</option>
+          <option value="Others">Others</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="course">Preferred Course</label>
+        <select id="course" name="course" required>
+          <option value="" disabled selected>Select Course</option>
+          <option value="Java">Java</option>
+          <option value="Python">Python</option>
+          <option value="MERN">MERN</option>
+          <option value="React">React</option>
+          <option value="Dot Net">Dot Net</option>
+          <option value="AWS">AWS</option>
+          <option value="Data Analytics">Data Analytics</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Create a password" required>
+      </div>
+
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm password" required>
+      </div>
+
+      <button type="submit" id="registerBtn">Register</button>
+
+      <p class="login-link">
+        Already have an account? <a href="login.html">Login here</a>
+      </p>
+    </form>
+  </div>
+
+  <script src="js/registration.js"></script>
+</body>
+
+</html>

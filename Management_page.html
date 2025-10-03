@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Fees Management</title>
+  <link rel="stylesheet" href="css/management.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <h1>💰 Fees Management</h1>
+
+    <div class="filters">
+      <input type="text" id="searchBar" placeholder="🔍 Search by student name or ID">
+      <select id="statusFilter">
+        <option value="">All Status</option>
+        <option value="paid">Paid</option>
+        <option value="pending">Pending</option>
+      </select>
+      <button id="searchBtn">Search</button>
+      <button id="dashboardBtn">⬅ Back to Dashboard</button>
+    </div>
+
+    <table id="feesTable">
+      <thead>
+        <tr>
+          <th>Student ID</th>
+          <th>Name</th>
+          <th>Course</th>
+          <th>Total Fees</th>
+          <th>Paid</th>
+          <th>Pending</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>SLA-001</td>
+          <td>Kanmani</td>
+          <td>Python Fullstack</td>
+          <td>₹50,000</td>
+          <td>₹50,000</td>
+          <td>₹0</td>
+          <td class="paid">✅ Paid</td>
+        </tr>
+        <tr>
+          <td>SLA-002</td>
+          <td>Priya K</td>
+          <td>Java Fullstack</td>
+          <td>₹45,000</td>
+          <td>₹20,000</td>
+          <td>₹25,000</td>
+          <td class="pending">❌ Pending</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="js/fees.js"></script>
+</body>
+
+</html>

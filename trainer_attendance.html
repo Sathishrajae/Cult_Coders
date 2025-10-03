@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trainer - Attendance Management</title>
+  <link rel="stylesheet" href="css/trainer_attendance.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="logo">Phoenix Academy</div>
+    <div class="nav-links">
+      <a href="trainer_attendance.html">Attendance</a>
+      <a href="trainer_mocktest.html">Mock Test</a>
+      <a href="trainer_placement.html">Placement</a>
+      <a href="index.html">Logout</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Attendance Management</h2>
+    <table id="attendanceTable">
+      <tr>
+        <th>Student Name</th>
+        <th>Date</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td>Sathish</td>
+        <td>01-Oct-2025</td>
+        <td>
+          <button class="btn" onclick="markAttendance(this,'Present')">Present</button>
+          <button class="btn" onclick="markAttendance(this,'Absent')">Absent</button>
+        </td>
+      </tr>
+      <tr>
+        <td>Moorthy</td>
+        <td>01-Oct-2025</td>
+        <td>
+          <button class="btn" onclick="markAttendance(this,'Present')">Present</button>
+          <button class="btn" onclick="markAttendance(this,'Absent')">Absent</button>
+        </td>
+      </tr>
+    </table>
+    <br>
+    <button class="btn" onclick="redirectToPlacement()">Submit</button>
+  </div>
+
+  <script src="js/train_attendance.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #958888;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 100%;
+  margin: 40px auto;
+  background: #b1d51f;
+  padding: 30px;
+  border-radius: 8px;
+  border: 5px solid #090909;
+  box-shadow: 0 0 12px rgba(10, 43, 195, 0.3);
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filters input,
+.filters select,
+.filters button {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #8ed11b;
+}
+
+.filters button {
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filters button:hover {
+  background: #0056b3;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: rgb(106, 13, 13);
+}
+
+table th,
+table td {
+  border: 3px solid #381a1a;
+  padding: 10px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+table th {
+  background: #db1515;
+  color: white;
+}
+
+.ready {
+  color: green;
+  font-weight: bold;
+}
+
+.not-ready {
+  color: red;
+  font-weight: bold;
+}
+
+.resume-link {
+  text-decoration: none;
+  color: #0000ee;
+  font-weight: bold;
+}
+
+.resume-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .filters {
+    flex-direction: column;
+  }
+
+  table,
+  th,
+  td {
+    font-size: 14px;
+    padding: 8px;
+  }
+}

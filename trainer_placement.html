@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trainer - Placement Approval</title>
+  <link rel="stylesheet" href="css/trainer_placement.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="logo">Phoenix Academy</div>
+    <div class="nav-links">
+      <a href="trainer_attendance.html">Attendance</a>
+      <a href="trainer_mocktest.html">Mock Test</a>
+      <a href="trainer_placement.html">Placement</a>
+      <a href="index.html">Logout</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Placement Approval</h2>
+    <table id="placementTable">
+      <tr>
+        <th>Student Name</th>
+        <th>Status</th>
+        <th>Action</th>
+      </tr>
+      <tr>
+        <td>Sathish</td>
+        <td class="status">Ready</td>
+        <td>
+          <button class="btn" onclick="approveStudent(this)">Approve</button>
+          <button class="btn" onclick="notApproveStudent(this)">Not Approve</button>
+        </td>
+      </tr>
+      <tr>
+        <td>Moorthy</td>
+        <td class="status">Pending</td>
+        <td>
+          <button class="btn" onclick="approveStudent(this)">Approve</button>
+          <button class="btn" onclick="notApproveStudent(this)">Not Approve</button>
+        </td>
+      </tr>
+    </table>
+
+    <div id="approvedList">
+      <h3>✅ Approved Placement List</h3>
+      <ul id="approvedStudents"></ul>
+    </div>
+  </div>
+
+  <script src="js/trainer_placement.js"></script>
+</body>
+
+</html>

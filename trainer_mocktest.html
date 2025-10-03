@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trainer - Mock Test Management</title>
+  <link rel="stylesheet" href="css/train_mock_test.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="logo">Phoenix Academy</div>
+    <div class="nav-links">
+      <a href="trainer_attendance.html">Attendance</a>
+      <a href="trainer_mocktest.html">Mock Test</a>
+      <a href="trainer_placement.html">Placement</a>
+      <a href="index.html">Logout</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Mock Test Management</h2>
+    <div class="table-container">
+      <table id="mockTestTable">
+        <tr>
+          <th>Student Name</th>
+          <th>Test Name</th>
+          <th>Score</th>
+          <th>Action</th>
+        </tr>
+        <tr>
+          <td>Sathish</td>
+          <td>Mock Test 1</td>
+          <td class="score">--</td>
+          <td><button class="btn" onclick="uploadScore(this)">Upload Score</button></td>
+        </tr>
+        <tr>
+          <td>Moorthy</td>
+          <td>Mock Test 1</td>
+          <td class="score">--</td>
+          <td><button class="btn" onclick="uploadScore(this)">Upload Score</button></td>
+        </tr>
+      </table>
+    </div>
+    <br>
+    <button class="btn" onclick="submitScores()">Submit & Go to Placement</button>
+  </div>
+
+  <script src="js/train_mock_test.js"></script>
+</body>
+
+</html>

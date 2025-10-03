@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Placement Group</title>
+  <link rel="stylesheet" href="css/placemeng.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>🎓 Placement Group</h1>
+
+    <!-- Filters -->
+    <div class="filters">
+      <input type="text" id="searchInput" placeholder="🔍 Search by name or ID">
+      <select id="courseFilter">
+        <option value="">All Courses</option>
+        <option value="Python Fullstack">Python Fullstack</option>
+        <option value="Java Fullstack">Java Fullstack</option>
+        <option value="Data Science">Data Science</option>
+      </select>
+      <select id="statusFilter">
+        <option value="">All Status</option>
+        <option value="Ready">Ready</option>
+        <option value="Not Ready">Not Ready</option>
+      </select>
+      <button onclick="applyFilters()">Search</button>
+    </div>
+
+    <!-- Student Table -->
+    <table id="placementTable">
+      <thead>
+        <tr>
+          <th>Student ID</th>
+          <th>Name</th>
+          <th>Course</th>
+          <th>Project Completed</th>
+          <th>Resume</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>SLA-101</td>
+          <td>Amit R</td>
+          <td>Python Fullstack</td>
+          <td>✅ Yes</td>
+          <td><a href="#" class="resume-link" data-id="SLA-101">View</a></td>
+          <td class="ready">Ready</td>
+        </tr>
+        <tr>
+          <td>SLA-102</td>
+          <td>Sneha K</td>
+          <td>Data Science</td>
+          <td>❌ No</td>
+          <td><a href="#" class="resume-link" data-id="SLA-102">View</a></td>
+          <td class="not-ready">Not Ready</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <script src="js/placementgroup.js"></script>
+</body>
+
+</html>
